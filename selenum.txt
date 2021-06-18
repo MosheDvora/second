@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+        stages {
+            stage('test') {
+                steps {
+                    dir('C:/Users/Owner/PycharmProjects/HomeWork') {
+                    bat 'clean.py'
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+Started by user Moshe Dvora
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Users\Owner\.jenkins\workspace\selenium
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (test)
+[Pipeline] dir
+Running in C:/Users/Owner/PycharmProjects/HomeWork
+[Pipeline] {
+[Pipeline] bat
+
+C:\Users\Owner\PycharmProjects\HomeWork>clean.py
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
